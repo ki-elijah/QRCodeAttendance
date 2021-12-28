@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Sucess{% endblock %}
+
+{% block content_title %}Sucess{% endblock %}
+
+{% block content %}
+<form action="{{ url_for('login', next=next_url) }}" class="form-horizontal" method="post">
+    <div class="form-group">
+        <label for="password" class="col-sm-2 control-label">Registered Successfully</label>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" onclick="javascript:window.close()"> Close </button>
+        </div>
+    </div>
+</form>
+{% endblock %}
